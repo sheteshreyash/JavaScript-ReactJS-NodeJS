@@ -1,9 +1,9 @@
 // Variables in javascript
 
-let a = 67  // We will use 'let' function to declare a which contains 67
-console.log(a)
-a = "Shreyash"  // type of a will change from integer to string
-console.log(a)
+let a = 67; // We will use 'let' function to declare a which contains 67
+console.log(a);
+a = "Shreyash"; // type of a will change from integer to string
+console.log(a);
 
 // javascript allows to change the variables types at runtime
 // and that's why it is called dynamic type programming language
@@ -12,3 +12,9 @@ console.log(a)
 
 // JavaScript is a Case Sensitive Programming Language
 
+a = 89;
+console.log(a);
+
+if (a < 9) {
+    console.log(a);
+}
