@@ -1,0 +1,37 @@
+<!-- write a js program using functions and while loop to print message "Try again !" until
+the user enters the correct number -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Guess the Number</title>
+    </head>
+    <body>
+        <script>
+                function checkNumber(userNumber, correctNumber) {  // Function to check if the entered number is correct
+                    return userNumber === correctNumber;
+                }
+
+                function getUserInput(promptMessage) {     // Function to prompt the user to enter a number
+                    return parseInt(prompt(promptMessage));
+                }
+
+                function main() {
+                    const correctNumber = 42;
+                    let userNumber = getUserInput("Guess the number: ");
+
+                    while (!checkNumber(userNumber, correctNumber)) {   // while loop just to check the number user enters
+                        console.log("Try again!");
+                        alert("Try again!");
+                        userNumber = getUserInput("Guess the number: ");
+                    }
+                    console.log("Congratulations! You guessed the correct number!");
+                    alert("Congratulations! You guessed the correct number!");
+                }
+                main();   // main function calling
+
+        </script>
+    </body>
+</html>

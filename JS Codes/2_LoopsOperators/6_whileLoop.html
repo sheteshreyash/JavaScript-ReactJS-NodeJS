@@ -1,0 +1,38 @@
+<!-- while and do while loops in js -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>while loop</title>
+</head>
+
+<body>
+    <script>
+        let n = prompt("Enter the number : ")
+        n = Number.parseInt(n)
+
+        // let i = 0              // while loop
+        // while (i < n) {
+        //     console.log(n)
+        //     i++;
+        // }
+        // alert(n)
+
+        let i=0                 // do while loop
+        do {
+            console.log(i)
+            i++;
+        }while(i<n)           // do while loop atleast runs once
+        alert(n)
+
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- Note that if the condition never becomes false, the loop will never end
+    this might crash the runtime   -->

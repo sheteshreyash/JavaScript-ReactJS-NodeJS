@@ -1,0 +1,61 @@
+<!-- functions in js -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>functions</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Enter a : ")
+        a = Number.parseInt(a)
+        let b = prompt("Enter b : ")
+        b = Number.parseInt(b)
+        let c = prompt("Enter c : ")
+        c = Number.parseInt(c)
+
+
+        function onePlusAvg(x, y) {    // function to create one-plus average
+            return (1 + (x + y) / 2)
+            // return Math.round(1 + (x + y) / 2)    // to print the round off values
+        }
+
+        console.log("One plus average of a and b is : ", onePlusAvg(a, b))
+        console.log("One plus average of b and c is : ", onePlusAvg(b, c))
+        console.log("One plus average of a and c is : ", onePlusAvg(a, c))
+
+        // for showing correct alert message
+        // let avg_a_b = onePlusAvg(a, b);
+        // let avg_b_c = onePlusAvg(b, c);
+        // let avg_a_c = onePlusAvg(a, c);
+
+        // alert("One plus average of a and b is : " + avg_a_b);
+        // alert("One plus average of b and c is : " + avg_b_c);
+        // alert("One plus average of a and c is : " + avg_a_c);
+
+
+
+
+        const sum = (p, q) => {    // modern functions in js known as arrow function
+            return (p + q)
+        }
+
+        console.log("Addition of a and b is : ", sum(a, b))
+        console.log("Addition of b and c is : ", sum(b, c))
+        console.log("Addition of a and c is : ", sum(a, c))
+
+        // let sum_a_b = sum(a, b);
+        // let sum_b_c = sum(b, c);
+        // let sum_a_c = sum(a, c);
+
+        // alert("Addition of a and b is : " + sum_a_b);
+        // alert("Addition of b and c is : " + sum_b_c);
+        // alert("Addition of a and c is : " + sum_a_c);
+
+    </script>
+</body>
+
+</html>

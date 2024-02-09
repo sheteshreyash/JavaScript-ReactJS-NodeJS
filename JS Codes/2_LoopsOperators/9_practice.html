@@ -1,0 +1,45 @@
+<!-- write a js program to find the mean of five numbers -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        function findMean(num1, num2, num3, num4, num5) {  // function of mean of 5 numbers
+            const sum = num1 + num2 + num3 + num4 + num5;
+            const mean = sum / 5;
+            return mean;
+        }
+
+        function getUserInput(message) {   // function for invalid input
+            let input;
+            do {
+                input = parseFloat(prompt(message));
+                if (isNaN(input)) {
+                    console.log("Invalid input. Please enter a valid number.");
+                }
+            } while (isNaN(input));
+            return input;
+        }
+
+        const number1 = getUserInput("Enter number 1:");
+        const number2 = getUserInput("Enter number 2:");
+        const number3 = getUserInput("Enter number 3:");
+        const number4 = getUserInput("Enter number 4:");
+        const number5 = getUserInput("Enter number 5:");
+
+        const mean = findMean(number1, number2, number3, number4, number5);
+        alert("Mean of 5 numbers : " + mean.toFixed(2)); // Convert mean to string and limit decimals to two places
+        console.log("Mean:", mean);
+
+    </script>
+</body>
+
+</html>
