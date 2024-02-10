@@ -24,8 +24,3 @@ console.log(str1.endsWith("best!"));
 
 // quiz
 console.log("shr\"".length)
-
-
-
-
-

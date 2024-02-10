@@ -1,0 +1,24 @@
+<!-- practice on arrays -->
+<!-- Adding numbers to array until 0 is added to the array -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let numarr = [12, 234, 56, 88, 78];
+            let a;
+            do {
+                a = prompt("Enter a number to add into the array")
+                a = Number.parseInt(a)  // convert string to number
+                numarr.push(a)
+            } while (a!=0);
+            console.log(numarr)
+            alert(numarr)
+
+        </script>
+    </body>
+</html>
