@@ -1,0 +1,48 @@
+<!-- Write a JavaScript program to generate a random number and store it in a variable.
+    The program then takes an input from
+    the user to tell them whether the guess was correct, greater or lesser than the original number.
+
+    100 – (no of guesses) is the score of the user.
+    The program is expected to terminate once the number is guesses.
+    Number should be between 1 – 100. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            // Generate a random number between 1 and 100
+                const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+                // Initialize number of guesses and user's score
+                let guesses = 0;
+                let score = 100;
+
+                // Function to prompt user for a guess and provide feedback
+                function guessNumber() {
+                    const userGuess = parseInt(prompt("Guess the number (between 1 and 100):"));
+
+                    // Increment the number of guesses
+                    guesses++;
+
+                    // Check if the guess is correct, greater, or lesser than the random number
+                    if (userGuess === randomNumber) {
+                        alert(`Congratulations! You guessed the correct number in ${guesses} guesses. Your score is ${score}.`);
+                    } else if (userGuess < randomNumber) {
+                        alert("Too low! Try again.");
+                        score -= 1; // Reduce score for incorrect guess
+                        guessNumber(); // Recursive call to continue guessing
+                    } else {
+                        alert("Too high! Try again.");
+                        score -= 1; // Reduce score for incorrect guess
+                        guessNumber(); // Recursive call to continue guessing
+                    }
+                }
+                guessNumber();  // call the function
+
+        </script>
+    </body>
+</html>
