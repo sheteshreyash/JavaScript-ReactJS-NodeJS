@@ -1,0 +1,48 @@
+<!-- Use JS to create a game of Snake, Water & Gun.
+The game should ask you to enter S, W or G. The computer should be able
+to randomly generate S, W or G and declare Win or Loss using alert.
+Use confirm and prompt wherever required. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Snake, Water and Gun</title>
+    </head>
+    <body>
+        <script>
+                    function startGame() {
+                    var userChoice = prompt("Enter S for Snake, W for Water, or G for Gun:");
+                    userChoice = userChoice ? userChoice.toUpperCase() : null;
+
+                    if (userChoice !== 'S' && userChoice !== 'W' && userChoice !== 'G') {
+                        alert("Invalid choice! Please choose S, W, or G.");
+                        return;
+                    }
+
+                    var computerChoice = generateComputerChoice();
+                    var result = getResult(userChoice, computerChoice);
+
+                    alert("Your choice: " + userChoice + "\nComputer's choice: " + computerChoice + "\nResult: " + result);
+                }
+
+                function generateComputerChoice() {
+                    var choices = ['S', 'W', 'G'];
+                    var randomIndex = Math.floor(Math.random() * 3);
+                    return choices[randomIndex];
+                }
+
+                function getResult(user, computer) {
+                    if (user === computer) {
+                        return "It's a tie!";
+                    } else if ((user === 'S' && computer === 'W') || (user === 'W' && computer === 'G') || (user === 'G' && computer === 'S')) {
+                        return "You win!";
+                    } else {
+                        return "You lose!";
+                    }
+                }
+        </script>
+        <button onclick="startGame()">Start Game</button>
+    </body>
+</html>

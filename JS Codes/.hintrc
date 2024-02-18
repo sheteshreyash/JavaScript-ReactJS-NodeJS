@@ -15,6 +15,14 @@
       {
         "document-title": "off"
       }
+    ],
+    "button-type": "off",
+    "no-inline-styles": "off",
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off"
+      }
     ]
   }
 }
