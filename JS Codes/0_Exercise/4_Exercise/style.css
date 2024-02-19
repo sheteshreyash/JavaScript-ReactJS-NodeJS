@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #232323;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+}
+
+.postman-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.content {
+    text-align: center;
+}
+
+.clock {
+    font-size: 5em;
+    color: #ff4d4d;
+    text-shadow: 0 0 10px #ff4d4d;
+}
+
+/* Updated CSS */
+.clock {
+    font-size: 8em;
+    /* Increased font size */
+    color: #ff4d4d;
+    text-shadow: 0 0 20px #ff4d4d;
+    /* Added text shadow for emphasis */
+}
+
+.postman-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
